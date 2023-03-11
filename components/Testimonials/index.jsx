@@ -228,7 +228,7 @@ const Testimonials = () => {
               className="w-full max-w-[315px] "
               style={{ alignSelf: "center" }}
             >
-              <h3 
+              <h3
                 style={{
                   color: "#3B3A3A",
                   fontSize: "38px",

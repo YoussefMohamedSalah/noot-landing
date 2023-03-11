@@ -61,16 +61,16 @@ const Header = () => {
                   } `}
                 >
                   <Image
-                    src="/images/logo/logo-2.svg"
+                    src="/images/hero/logo.png"
                     alt="logo"
-                    width={140}
+                    width={120}
                     height={30}
                     className="w-full dark:hidden"
                   />
                   <Image
-                    src="/images/logo/logo.svg"
+                    src="/images/hero/logo.png"
                     alt="logo"
-                    width={140}
+                    width={120}
                     height={30}
                     className="hidden w-full dark:block"
                   />
@@ -114,7 +114,7 @@ const Header = () => {
                           {menuItem.path ? (
                             <Link
                               href={menuItem.path}
-                              className={`flex py-2 text-base text-dark group-hover:opacity-70 dark:text-white lg:mr-0 lg:inline-flex lg:py-6 lg:px-0`}
+                              className={`flex py-2 text-base text-[22px] font-[400]  text-primary group-hover:opacity-70 lg:mr-0 lg:inline-flex lg:py-6 lg:px-0`}
                             >
                               {menuItem.title}
                             </Link>
@@ -122,7 +122,7 @@ const Header = () => {
                             <>
                               <a
                                 onClick={() => handleSubmenu(index)}
-                                className="flex cursor-pointer items-center justify-between py-2 text-base text-dark group-hover:opacity-70 dark:text-white lg:mr-0 lg:inline-flex lg:py-6 lg:px-0"
+                                className="flex cursor-pointer items-center justify-between py-2 text-[22px] text-base font-[400] text-primary group-hover:opacity-70  lg:mr-0 lg:inline-flex lg:py-6 lg:px-0"
                               >
                                 {menuItem.title}
                                 <span className="pl-3">
@@ -163,15 +163,15 @@ const Header = () => {
                 <div className="flex items-center justify-end pr-16 lg:pr-0">
                   <Link
                     href="/signin"
-                    className="!dark:text-black hidden py-3 px-7 text-base  font-bold text-dark hover:opacity-70 dark:text-white md:block"
+                    className="hidden py-3 px-7 text-base text-[29px] font-[400] text-primary hover:opacity-70  md:block"
                   >
-                    Sign In
+                    LOGIN
                   </Link>
                   <Link
                     href="/signup"
-                    className="ease-in-up hidden rounded-md bg-primary py-3 px-8 text-base font-bold text-white transition duration-300 hover:bg-opacity-90 hover:shadow-signUp md:block md:px-9 lg:px-6 xl:px-9"
+                    className="ease-in-up hidden rounded-md bg-primary py-3 px-8 text-base text-[20px] font-[400] text-white transition duration-300 hover:bg-opacity-90 hover:shadow-signUp md:block md:px-9 lg:px-6 xl:px-9"
                   >
-                    Sign Up
+                    GET STARTED
                   </Link>
                   <div>
                     <ThemeToggler />
