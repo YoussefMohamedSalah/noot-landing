@@ -24,7 +24,7 @@ const Features = () => {
     <>
       <section
         id="features"
-        className="bg-primary/[.03] py-16 md:py-20 lg:py-28"
+        className="bg-primary/5"
       >
         <div className="container">
           <SectionTitle

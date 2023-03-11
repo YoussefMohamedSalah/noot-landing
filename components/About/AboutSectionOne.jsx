@@ -1,5 +1,4 @@
 import Image from "next/image";
-import SectionTitle from "../Common/SectionTitle";
 import { FaLongArrowAltRight } from "react-icons/fa";
 
 const checkIcon = (
@@ -27,17 +26,30 @@ const AboutSectionOne = () => {
               {/* section */}
               <>
                 <div
+                  style={{
+                    width: "4rem",
+                    backgroundColor: "#FF6057",
+                    height: "0.4rem",
+                    borderRadius: "10px",
+                    marginBottom: "1.2rem",
+                    marginTop: "1.2rem"
+                  }}
+                />
+                <div
                   className={`wow fadeInUp mx-auto w-full text-start `}
                   data-wow-delay=".1s"
                   style={{ marginBottom: "10px" }}
                 >
                   <h2
                     className="mb-4 text-3xl font-bold !leading-tight  sm:text-4xl md:text-[40px]"
-                    style={{ color: "#6DC45E" }}
+                    style={{ color: "#3B3A3A" }}
                   >
                     Best platform for the Technologies Era
                   </h2>
-                  <p className="text-body-primary text-base !leading-relaxed md:text-lg">
+                  <p
+                    className="text-body-primary text-base !leading-relaxed md:text-lg"
+                    style={{ color: "#3B3A3A" }}
+                  >
                     The main ‘thrust’ is to focus on educating attendees on how
                     to best protect highly vulnerable business applications with
                     interactive panel discussions and roundtables.
@@ -50,7 +62,7 @@ const AboutSectionOne = () => {
                 >
                   <a
                     href="#0"
-                    style={{ color: "#06B7B7" }}
+                    style={{ color: "#FF6057" }}
                     className="flex  text-sm text-body-color transition hover:bg-opacity-100 hover:text-white"
                   >
                     Learn about our success! &nbsp; &nbsp; &nbsp;{" "}
