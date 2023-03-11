@@ -20,11 +20,11 @@ const AboutSectionOne = () => {
   return (
     <section id="about" className="pt-16 md:pt-20 lg:pt-28">
       <div className="container">
-        <div className="border-b border-body-color/[.15] pb-16 dark:border-white/[.15] md:pb-20 lg:pb-28">
+        <div>
           <div className="-mx-4 flex flex-wrap items-center ">
-            <div className="w-full px-4 lg:w-1/3">
+            <div className="h-[100%] w-full px-4 lg:w-1/3">
               {/* section */}
-              <>
+              <div style={{ paddingTop: "2rem", alignSelf: "top" }}>
                 <div
                   style={{
                     width: "4rem",
@@ -71,7 +71,7 @@ const AboutSectionOne = () => {
                     />
                   </a>
                 </div>
-              </>
+              </div>
               {/* section */}
             </div>
 

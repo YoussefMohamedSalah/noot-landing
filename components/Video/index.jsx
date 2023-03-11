@@ -10,7 +10,7 @@ const Video = () => {
   const [isOpen, setOpen] = useState(false);
 
   return (
-    <section className="relative z-10 ">
+    <section className="relative z-10  ">
       <div className="container">
         <div
           style={{

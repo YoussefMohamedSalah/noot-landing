@@ -33,9 +33,9 @@ const testimonialData = [
 
 const Testimonials = () => {
   return (
-    <section className="relative z-10 bg-primary/5 ">
+    <section className="relative z-10 ">
       <div className="container">
-        <div className="container">
+        <div>
           <div className="">
             <div className="-mx-4 flex flex-wrap items-center ">
               <div className="w-full px-4 lg:w-1/2">
