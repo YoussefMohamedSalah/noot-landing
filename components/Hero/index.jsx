@@ -21,10 +21,18 @@ const Hero = () => {
       <img
         src="/images/hero/Subtraction_2.png"
         alt="clip image"
-        // className="z-[-1] w-[13%] lg:w-[10%]"
-        // style={{ position: "absolute", bottom: "-3rem", left: "-2rem" }}
         className="absolute left-[0rem] bottom-[28rem] z-[-1] w-[13%] lg:left-[-2rem] lg:bottom-[-2rem] lg:w-[10%]"
       />
+
+      <img
+        src="/images/hero/Group_19898.png"
+        alt="clip image"
+        className="absolute     left-[5rem]       bottom-[16rem]
+          z-[-1] w-[65%] 
+                                lg:left-[53rem] lg:bottom-[7rem] 
+          lg:w-[20%]"
+      />
+
       <section
         id="home"
         className="relative z-10 overflow-hidden pt-[120px] xl:pt-[180px] 2xl:pt-[210px] "
@@ -43,15 +51,12 @@ const Hero = () => {
                   EVERYTHING TO
                   <br /> SELL ANYTHING
                 </h1>
-                <p className="mb-12 text-base font-medium !leading-relaxed text-body-color  dark:opacity-90 sm:text-lg md:text-xl">
-                  Startup is free Next.js template for startups and SaaS
-                  business websites comes with all the essential pages,
-                  components, and sections you need to launch a complete
-                  business website, built-with Next 13.x and Tailwind CSS.
+                <p className="mb-12 text-base  !leading-relaxed text-white  dark:opacity-90 sm:text-lg md:text-xl">
+                  Start your free website trial today. No credit card required.
                 </p>
                 <Link
                   href="https://nextjstemplates.com/templates/startup"
-                  className="rounded-md bg-primary py-4 px-8 text-base font-semibold text-white duration-300 ease-in-out hover:bg-primary/80"
+                  className="rounded-md bg-white py-4 px-8 text-base text-[24px] font-semibold text-primary duration-300 ease-in-out"
                 >
                   GET STARTED
                 </Link>
