@@ -23,24 +23,23 @@ const Pricing = () => {
                 display: "flex",
                 flexDirection: "column",
                 gap: "1",
-                alignItems: "center",
+                alignItems: "center"
               }}
             >
-              <h3
+              <p
+                className="text-[34px] text-3xl lg:text-[44px]"
                 style={{
                   color: "#FF6057",
-                  fontSize: "46px",
-                  fontWeight: "700",
-                  lineHeight: "72px",
+
+                  lineHeight: "72px"
                 }}
               >
                 570
-              </h3>
+              </p>
               <p
+                className="text-[14px] lg:text-[20px] "
                 style={{
-                  color: "#3B3A3A",
-                  fontSize: "20px",
-                  fontWeight: "400",
+                  color: "#3B3A3A"
                 }}
               >
                 downloads
@@ -51,24 +50,23 @@ const Pricing = () => {
                 display: "flex",
                 flexDirection: "column",
                 gap: "1",
-                alignItems: "center",
+                alignItems: "center"
               }}
             >
-              <h3
+              <p
+                className="text-[34px] text-3xl lg:text-[44px]"
                 style={{
                   color: "#FF6057",
-                  fontSize: "46px",
-                  fontWeight: "700",
-                  lineHeight: "72px",
+
+                  lineHeight: "72px"
                 }}
               >
                 570
-              </h3>
+              </p>
               <p
+                className="text-[14px] lg:text-[20px] "
                 style={{
-                  color: "#3B3A3A",
-                  fontSize: "20px",
-                  fontWeight: "400",
+                  color: "#3B3A3A"
                 }}
               >
                 Active User
@@ -79,24 +77,23 @@ const Pricing = () => {
                 display: "flex",
                 flexDirection: "column",
                 gap: "1",
-                alignItems: "center",
+                alignItems: "center"
               }}
             >
-              <h3
+              <p
+                className="text-[34px] text-3xl lg:text-[44px]"
                 style={{
                   color: "#FF6057",
-                  fontSize: "46px",
-                  fontWeight: "700",
-                  lineHeight: "72px",
+
+                  lineHeight: "72px"
                 }}
               >
                 570
-              </h3>
+              </p>
               <p
+                className="text-[14px] lg:text-[20px] "
                 style={{
-                  color: "#3B3A3A",
-                  fontSize: "20px",
-                  fontWeight: "400",
+                  color: "#3B3A3A"
                 }}
               >
                 Positive Feedback
@@ -107,24 +104,23 @@ const Pricing = () => {
                 display: "flex",
                 flexDirection: "column",
                 gap: "1",
-                alignItems: "center",
+                alignItems: "center"
               }}
             >
-              <h3
+              <p
+                className="text-[34px] text-3xl lg:text-[44px]"
                 style={{
                   color: "#FF6057",
-                  fontSize: "46px",
-                  fontWeight: "700",
-                  lineHeight: "72px",
+
+                  lineHeight: "72px"
                 }}
               >
                 570
-              </h3>
+              </p>
               <p
+                className="text-[14px] lg:text-[20px] "
                 style={{
-                  color: "#3B3A3A",
-                  fontSize: "20px",
-                  fontWeight: "400",
+                  color: "#3B3A3A"
                 }}
               >
                 + rating
@@ -142,53 +138,50 @@ const Pricing = () => {
                     width: "95%",
                     height: "65%",
                     backgroundColor: "white",
-                    alignSelf: "center",
+                    alignSelf: "center"
                   }}
                 >
                   <div
+                    className="p-[0.5rem] lg:p-[3rem]"
                     style={{
                       display: "flex",
                       flexDirection: "row",
                       width: "100%",
                       height: "100%",
                       justifyContent: "center",
-                      alignItems: "center",
-                      padding: "3rem",
+                      alignItems: "center"
                     }}
                   >
                     <img
+                      className="w-100 lg:w-[100%]"
                       src="/images/hero/shutterstock_45.png"
                       alt="shape"
                       style={{
-                        width: "157px",
-                        height: "203px",
                         marginRight: "1.5rem",
+                        height: "100%"
                       }}
                     />
                     <div>
-                      <h5
+                      <p
+                        className="pb-[1rem] text-lg font-bold sm:text-sm"
                         style={{
-                          paddingBottom: "1rem",
-                          color: "#3B3A3A",
-                          fontSize: "24px",
+                          color: "#3B3A3A"
                         }}
                       >
                         Florrie Jacobs
-                      </h5>
-                      <h6
+                      </p>
+                      <p
+                        className="pb-[0.5rem]"
                         style={{
-                          paddingBottom: "1rem",
-                          color: "#8F8F8F",
-                          fontSize: "16px",
+                          color: "#8F8F8F"
                         }}
                       >
                         CEO of Company
-                      </h6>
-                      <h6 style={{ color: "#8F8F8F", fontSize: "16px" }}>
+                      </p>
+                      <p style={{ color: "#8F8F8F" }}>
                         Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                        Pariatur aperiam illo doloribus ab molestias
-                        perspiciatis?
-                      </h6>
+                        Pariatur aperiam
+                      </p>
                       <div style={{ display: "flex", paddingTop: "1rem" }}>
                         <img
                           src="/images/hero/Imetro-star.png"
@@ -196,7 +189,7 @@ const Pricing = () => {
                           style={{
                             width: "1rem",
                             height: "1rem",
-                            marginRight: "0.5rem",
+                            marginRight: "0.5rem"
                           }}
                         />
                         <img
@@ -205,7 +198,7 @@ const Pricing = () => {
                           style={{
                             width: "1rem",
                             height: "1rem",
-                            marginRight: "0.5rem",
+                            marginRight: "0.5rem"
                           }}
                         />
                         <img
@@ -214,7 +207,7 @@ const Pricing = () => {
                           style={{
                             width: "1rem",
                             height: "1rem",
-                            marginRight: "0.5rem",
+                            marginRight: "0.5rem"
                           }}
                         />
                         <img
@@ -223,7 +216,7 @@ const Pricing = () => {
                           style={{
                             width: "1rem",
                             height: "1rem",
-                            marginRight: "0.5rem",
+                            marginRight: "0.5rem"
                           }}
                         />
                         <img
@@ -232,7 +225,7 @@ const Pricing = () => {
                           style={{
                             width: "1rem",
                             height: "1rem",
-                            marginRight: "0.5rem",
+                            marginRight: "0.5rem"
                           }}
                         />
                       </div>
@@ -286,7 +279,7 @@ const Pricing = () => {
                         height: "45px",
                         color: "white",
                         fontSize: "16px",
-                        fontWeight: "400",
+                        fontWeight: "400"
                       }}
                     >
                       About us

@@ -189,7 +189,7 @@ const Testimonials = () => {
                       alignItems: "start",
                       width: "100%",
                       height: "50vh",
-                      paddingTop: "3rem"
+                      paddingTop: "1rem"
                     }}
                   >
                     <div>
@@ -229,12 +229,12 @@ const Testimonials = () => {
               style={{ alignSelf: "center" }}
             >
               <h3
+                className="pt-[7rem] text-bold bold"
                 style={{
                   color: "#3B3A3A",
                   fontSize: "38px",
-                  fontWeight: "bold",
-                  lineHeight: "49px",
-                  paddingTop: "4rem"
+                  
+                  lineHeight: "49px"
                 }}
               >
                 Don&apos;t Just Take our Word for it!
