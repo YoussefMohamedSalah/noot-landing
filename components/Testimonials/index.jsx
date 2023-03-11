@@ -36,7 +36,7 @@ const Testimonials = () => {
     <section className="relative z-10 ">
       <div className="container">
         <div>
-          <div className="">
+          <div className="flex flex-col items-center">
             <div className="-mx-4 flex flex-wrap items-center ">
               <div className="w-full px-4 lg:w-1/2">
                 {/* section */}
@@ -66,8 +66,8 @@ const Testimonials = () => {
                   </div>
                   <div
                     className="text-1xl sm:text-1xl mx-[-12px] mb-4
-                flex flex-wrap p-2  md:text-[20px]
-                "
+                              flex flex-wrap p-2  md:text-[20px]
+                              "
                   >
                     <a
                       href="#0"
@@ -114,8 +114,8 @@ const Testimonials = () => {
                     <div
                       style={{ backgroundColor: "#FF6057" }}
                       className=" m-2 mb-2 flex flex flex h-16 w-16
-                  w-16 items-center justify-center rounded-full rounded-full text-primary
-                  "
+                                  w-16 items-center justify-center rounded-full rounded-full text-primary
+                                  "
                     >
                       <p
                         style={{
@@ -140,8 +140,8 @@ const Testimonials = () => {
                     <div
                       style={{ backgroundColor: "#FF6057" }}
                       className=" m-2 mb-2 flex flex flex h-16 w-16
-                  w-16 items-center justify-center rounded-full rounded-full text-primary
-                  "
+                                  w-16 items-center justify-center rounded-full rounded-full text-primary
+                                  "
                     >
                       <p
                         style={{
@@ -166,8 +166,8 @@ const Testimonials = () => {
                     <div
                       style={{ backgroundColor: "#FF6057" }}
                       className=" m-2 mb-2 flex flex flex h-16 w-16
-                  w-16 items-center justify-center rounded-full rounded-full text-primary
-                  "
+                                  w-16 items-center justify-center rounded-full rounded-full text-primary
+                                  "
                     >
                       <p
                         style={{
@@ -224,11 +224,22 @@ const Testimonials = () => {
                 </div>
               </div>
             </div>
-            {/* <div style={{alignSelf:'center'}}>
-                    <h3 style>
-
-                    </h3>
-            </div> */}
+            <div
+              className="w-full max-w-[315px] "
+              style={{ alignSelf: "center" }}
+            >
+              <h3 
+                style={{
+                  color: "#3B3A3A",
+                  fontSize: "38px",
+                  fontWeight: "bold",
+                  lineHeight: "49px",
+                  paddingTop: "4rem"
+                }}
+              >
+                Don&apos;t Just Take our Word for it!
+              </h3>
+            </div>
           </div>
         </div>
       </div>

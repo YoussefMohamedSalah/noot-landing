@@ -1,161 +1,312 @@
+/* eslint-disable @next/next/no-img-element */
 "use client";
 import { useState } from "react";
 import SectionTitle from "../Common/SectionTitle";
 import OfferList from "./OfferList";
 import PricingBox from "./PricingBox";
+import Image from "next/image";
+import { display } from "@mui/system";
 
 const Pricing = () => {
   const [isMonthly, setIsMonthly] = useState(true);
 
   return (
-    <section id="pricing" className="relative z-10">
+    <section id="pricing" className="relative z-10 pt-10">
       <div className="container">
-        <SectionTitle
-          title="Simple and Affordable Pricing"
-          paragraph="There are many variations of passages of Lorem Ipsum available but the majority have suffered alteration in some form."
-          center
-          width="665px"
-        />
-
-        <div className="w-full">
+        <div style={{ display: "flex", flexDirection: "column" }}>
           <div
-            className="wow fadeInUp mb-8 flex justify-center md:mb-12 lg:mb-16"
-            data-wow-delay=".1s"
+            className="flex w-full"
+            style={{ justifyContent: "space-evenly" }}
           >
-            <span
-              onClick={() => setIsMonthly(true)}
-              className={`${
-                isMonthly
-                  ? "pointer-events-none text-primary"
-                  : "text-dark dark:text-white"
-              } mr-4 cursor-pointer text-base font-semibold`}
-            >
-              Monthly
-            </span>
             <div
-              onClick={() => setIsMonthly(!isMonthly)}
-              className="flex cursor-pointer items-center"
+              style={{
+                display: "flex",
+                flexDirection: "column",
+                gap: "1",
+                alignItems: "center"
+              }}
             >
-              <div className="relative">
-                <div className="h-5 w-14 rounded-full bg-[#1D2144] shadow-inner"></div>
+              <h3
+                style={{
+                  color: "#FF6057",
+                  fontSize: "46px",
+                  fontWeight: "700",
+                  lineHeight: "72px"
+                }}
+              >
+                570
+              </h3>
+              <p
+                style={{
+                  color: "#3B3A3A",
+                  fontSize: "20px",
+                  fontWeight: "400"
+                }}
+              >
+                downloads
+              </p>
+            </div>
+            <div
+              style={{
+                display: "flex",
+                flexDirection: "column",
+                gap: "1",
+                alignItems: "center"
+              }}
+            >
+              <h3
+                style={{
+                  color: "#FF6057",
+                  fontSize: "46px",
+                  fontWeight: "700",
+                  lineHeight: "72px"
+                }}
+              >
+                570
+              </h3>
+              <p
+                style={{
+                  color: "#3B3A3A",
+                  fontSize: "20px",
+                  fontWeight: "400"
+                }}
+              >
+                Active User
+              </p>
+            </div>
+            <div
+              style={{
+                display: "flex",
+                flexDirection: "column",
+                gap: "1",
+                alignItems: "center"
+              }}
+            >
+              <h3
+                style={{
+                  color: "#FF6057",
+                  fontSize: "46px",
+                  fontWeight: "700",
+                  lineHeight: "72px"
+                }}
+              >
+                570
+              </h3>
+              <p
+                style={{
+                  color: "#3B3A3A",
+                  fontSize: "20px",
+                  fontWeight: "400"
+                }}
+              >
+                Positive Feedback
+              </p>
+            </div>
+            <div
+              style={{
+                display: "flex",
+                flexDirection: "column",
+                gap: "1",
+                alignItems: "center"
+              }}
+            >
+              <h3
+                style={{
+                  color: "#FF6057",
+                  fontSize: "46px",
+                  fontWeight: "700",
+                  lineHeight: "72px"
+                }}
+              >
+                570
+              </h3>
+              <p
+                style={{
+                  color: "#3B3A3A",
+                  fontSize: "20px",
+                  fontWeight: "400"
+                }}
+              >
+                + rating
+              </p>
+            </div>
+          </div>
+          <div
+            style={{
+              display: "flex",
+              flexDirection: "row",
+              justifyContent: "center",
+              alignItems: "center",
+              width: "100%",
+              height: "100%"
+            }}
+          >
+            <div className="w-[100%] w-full px-4 lg:w-1/2">
+              <div
+                className="wow fadeInUp w-900 relative mx-auto flex aspect-[27/24] lg:mr-0"
+                data-wow-delay=".2s"
+              >
                 <div
-                  className={`${
-                    isMonthly ? "" : "translate-x-full"
-                  } shadow-switch-1 absolute left-0 top-[-4px] flex h-7 w-7 items-center justify-center rounded-full bg-primary transition`}
+                  style={{
+                    width: "95%",
+                    height: "65%",
+                    backgroundColor: "white",
+                    alignSelf: "center"
+                  }}
                 >
-                  <span className="active h-4 w-4 rounded-full bg-white"></span>
+                  <div
+                    style={{
+                      display: "flex",
+                      flexDirection: "row",
+                      width: "100%",
+                      height: "100%",
+                      justifyContent: "center",
+                      alignItems: "center",
+                      padding: "3rem"
+                    }}
+                  >
+                    <img
+                      src="/images/hero/shutterstock_45.png"
+                      alt="shape"
+                      style={{
+                        width: "157px",
+                        height: "203px",
+                        marginRight: "1.5rem"
+                      }}
+                    />
+                    <div>
+                      <h5
+                        style={{
+                          paddingBottom: "1rem",
+                          color: "#3B3A3A",
+                          fontSize: "24px"
+                        }}
+                      >
+                        Florrie Jacobs
+                      </h5>
+                      <h6
+                        style={{
+                          paddingBottom: "1rem",
+                          color: "#8F8F8F",
+                          fontSize: "16px"
+                        }}
+                      >
+                        CEO of Company
+                      </h6>
+                      <h6 style={{ color: "#8F8F8F", fontSize: "16px" }}>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Pariatur aperiam illo doloribus ab molestias
+                        perspiciatis?
+                      </h6>
+                      <div style={{ display: "flex", paddingTop: "1rem" }}>
+                        <img
+                          src="/images/hero/Imetro-star.png"
+                          alt="shape"
+                          style={{
+                            width: "1rem",
+                            height: "1rem",
+                            marginRight: "0.5rem"
+                          }}
+                        />
+                        <img
+                          src="/images/hero/Imetro-star.png"
+                          alt="shape"
+                          style={{
+                            width: "1rem",
+                            height: "1rem",
+                            marginRight: "0.5rem"
+                          }}
+                        />{" "}
+                        <img
+                          src="/images/hero/Imetro-star.png"
+                          alt="shape"
+                          style={{
+                            width: "1rem",
+                            height: "1rem",
+                            marginRight: "0.5rem"
+                          }}
+                        />{" "}
+                        <img
+                          src="/images/hero/Imetro-star.png"
+                          alt="shape"
+                          style={{
+                            width: "1rem",
+                            height: "1rem",
+                            marginRight: "0.5rem"
+                          }}
+                        />{" "}
+                        <img
+                          src="/images/hero/Imetro-star.png"
+                          alt="shape"
+                          style={{
+                            width: "1rem",
+                            height: "1rem",
+                            marginRight: "0.5rem"
+                          }}
+                        />
+                      </div>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
-            <span
-              onClick={() => setIsMonthly(false)}
-              className={`${
-                isMonthly
-                  ? "text-dark dark:text-white"
-                  : "pointer-events-none text-primary"
-              } ml-4 cursor-pointer text-base font-semibold`}
-            >
-              Yearly
-            </span>
+            <div className="w-full px-4 lg:w-1/2">
+              {/* section */}
+              <>
+                <div
+                  className={`wow fadeInUp mx-auto w-full text-start `}
+                  data-wow-delay=".1s"
+                  style={{ marginBottom: "10px", paddingRight: "5rem" }}
+                >
+                  <h2
+                    className="mb-4 text-3xl font-bold !leading-tight  sm:text-4xl md:text-[40px]"
+                    style={{ color: "#3B3A3A" }}
+                  >
+                    Grow Your Business and Join Our Happy Users
+                  </h2>
+                  <p
+                    className="text-body-primary text-base !leading-relaxed md:text-lg"
+                    style={{ color: "#3B3A3A" }}
+                  >
+                    Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed
+                    diam nonumy eirmod tempor invidunt ut labore et dolore magna
+                    aliquyam erat, sed diam voluptua. At vero eos et accusam et
+                    justo duo dolores et ea rebum. Stet clita kasd gubergren, no
+                    sea takimata sanctus est Lorem ipsum dolor sit amet
+                  </p>
+                </div>
+                <div
+                  className="text-1xl sm:text-1xl mx-[-12px] mb-4
+                flex flex-wrap p-2  md:text-[20px]
+                "
+                >
+                  <a
+                    href="#0"
+                    style={{ color: "#06B7B7" }}
+                    className="flex  text-sm text-body-color transition hover:bg-opacity-100 hover:text-white"
+                  >
+                    <button
+                      type="button"
+                      class=" mr-2 mb-2 rounded-lg  bg-white px-5 py-2.5 text-sm font-medium focus:outline-none focus:ring-4 "
+                      style={{
+                        background:
+                          "linear-gradient(-90deg, rgba(124,28,128,0.66 ) 0.00%,  #ff6057 100.00%)",
+                        width: "178px",
+                        height: "45px",
+                        color: "white",
+                        fontSize: "16px",
+                        fontWeight: "400"
+                      }}
+                    >
+                      About us
+                    </button>
+                  </a>
+                </div>
+              </>
+              {/* section */}
+            </div>
           </div>
         </div>
-
-        <div className="grid grid-cols-1 gap-x-8 gap-y-10 md:grid-cols-2 lg:grid-cols-3">
-          <PricingBox
-            packageName="Lite"
-            price={isMonthly ? "40" : "120"}
-            duration={isMonthly ? "mo" : "yr"}
-            subtitle="Lorem ipsum dolor sit amet adiscing elit Mauris egestas enim."
-          >
-            <OfferList text="All UI Components" status="active" />
-            <OfferList text="Use with Unlimited Projects" status="active" />
-            <OfferList text="Commercial Use" status="active" />
-            <OfferList text="Email Support" status="active" />
-            <OfferList text="Lifetime Access" status="inactive" />
-            <OfferList text="Free Lifetime Updates" status="inactive" />
-          </PricingBox>
-          <PricingBox
-            packageName="Basic"
-            price={isMonthly ? "399" : "789"}
-            duration={isMonthly ? "mo" : "yr"}
-            subtitle="Lorem ipsum dolor sit amet adiscing elit Mauris egestas enim."
-          >
-            <OfferList text="All UI Components" status="active" />
-            <OfferList text="Use with Unlimited Projects" status="active" />
-            <OfferList text="Commercial Use" status="active" />
-            <OfferList text="Email Support" status="active" />
-            <OfferList text="Lifetime Access" status="active" />
-            <OfferList text="Free Lifetime Updates" status="inactive" />
-          </PricingBox>
-          <PricingBox
-            packageName="Plus"
-            price={isMonthly ? "589" : "999"}
-            duration={isMonthly ? "mo" : "yr"}
-            subtitle="Lorem ipsum dolor sit amet adiscing elit Mauris egestas enim."
-          >
-            <OfferList text="All UI Components" status="active" />
-            <OfferList text="Use with Unlimited Projects" status="active" />
-            <OfferList text="Commercial Use" status="active" />
-            <OfferList text="Email Support" status="active" />
-            <OfferList text="Lifetime Access" status="active" />
-            <OfferList text="Free Lifetime Updates" status="active" />
-          </PricingBox>
-        </div>
-      </div>
-
-      <div className="absolute left-0 bottom-0 z-[-1]">
-        <svg
-          width="239"
-          height="601"
-          viewBox="0 0 239 601"
-          fill="none"
-          xmlns="http://www.w3.org/2000/svg"
-        >
-          <rect
-            opacity="0.3"
-            x="-184.451"
-            y="600.973"
-            width="196"
-            height="541.607"
-            rx="2"
-            transform="rotate(-128.7 -184.451 600.973)"
-            fill="url(#paint0_linear_93:235)"
-          />
-          <rect
-            opacity="0.3"
-            x="-188.201"
-            y="385.272"
-            width="59.7544"
-            height="541.607"
-            rx="2"
-            transform="rotate(-128.7 -188.201 385.272)"
-            fill="url(#paint1_linear_93:235)"
-          />
-          <defs>
-            <linearGradient
-              id="paint0_linear_93:235"
-              x1="-90.1184"
-              y1="420.414"
-              x2="-90.1184"
-              y2="1131.65"
-              gradientUnits="userSpaceOnUse"
-            >
-              <stop stopColor="#4A6CF7" />
-              <stop offset="1" stopColor="#4A6CF7" stopOpacity="0" />
-            </linearGradient>
-            <linearGradient
-              id="paint1_linear_93:235"
-              x1="-159.441"
-              y1="204.714"
-              x2="-159.441"
-              y2="915.952"
-              gradientUnits="userSpaceOnUse"
-            >
-              <stop stopColor="#4A6CF7" />
-              <stop offset="1" stopColor="#4A6CF7" stopOpacity="0" />
-            </linearGradient>
-          </defs>
-        </svg>
       </div>
     </section>
   );
