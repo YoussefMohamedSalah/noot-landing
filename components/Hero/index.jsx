@@ -1,122 +1,36 @@
+/* eslint-disable @next/next/no-img-element */
+/* eslint-disable jsx-a11y/alt-text */
 import Link from "next/link";
 import Image from "next/image";
 
 const Hero = () => {
   return (
     <>
+      <img
+        src="/images/hero/Path_30.png"
+        alt="clip image"
+        className="z-[-10] w-[100%] lg:w-[60%]"
+        style={{ position: "absolute", top: "6rem" }}
+      />
+
+      <img
+        src="/images/hero/Subtraction_1.png"
+        alt="clip image"
+        className="absolute left-[2rem] top-[6rem] z-[-1] w-[19%] lg:left-[2rem] lg:top-[6rem] lg:w-[16%]"
+      />
+      <img
+        src="/images/hero/Subtraction_2.png"
+        alt="clip image"
+        // className="z-[-1] w-[13%] lg:w-[10%]"
+        // style={{ position: "absolute", bottom: "-3rem", left: "-2rem" }}
+        className="absolute left-[0rem] bottom-[28rem] z-[-1] w-[13%] lg:left-[-2rem] lg:bottom-[-2rem] lg:w-[10%]"
+      />
       <section
         id="home"
         className="relative z-10 overflow-hidden pt-[120px] xl:pt-[180px] 2xl:pt-[210px] "
       >
-        <div className="absolute top-0 left-0 z-[-1] opacity-30 lg:opacity-100">
-          <svg
-            width="450"
-            height="556"
-            viewBox="0 0 450 556"
-            fill="none"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <circle
-              cx="277"
-              cy="63"
-              r="225"
-              fill="url(#paint0_linear_25:217)"
-            />
+        <div className="absolute top-0 left-0 z-[-1] opacity-30 lg:opacity-100"></div>
 
-            <defs>
-              <linearGradient
-                id="paint0_linear_25:217"
-                x1="-54.5003"
-                y1="-178"
-                x2="222"
-                y2="288"
-                gradientUnits="userSpaceOnUse"
-              >
-                <stop stopColor="#4A6CF7" />
-                <stop offset="1" stopColor="#4A6CF7" stopOpacity="0" />
-              </linearGradient>
-              <radialGradient
-                id="paint1_radial_25:217"
-                cx="0"
-                cy="0"
-                r="1"
-                gradientUnits="userSpaceOnUse"
-                gradientTransform="translate(17.9997 182) rotate(90) scale(18)"
-              >
-                <stop offset="0.145833" stopColor="#4A6CF7" stopOpacity="0" />
-                <stop offset="1" stopColor="#4A6CF7" stopOpacity="0.08" />
-              </radialGradient>
-              <radialGradient
-                id="paint2_radial_25:217"
-                cx="0"
-                cy="0"
-                r="1"
-                gradientUnits="userSpaceOnUse"
-                gradientTransform="translate(76.9997 288) rotate(90) scale(34)"
-              >
-                <stop offset="0.145833" stopColor="#4A6CF7" stopOpacity="0" />
-                <stop offset="1" stopColor="#4A6CF7" stopOpacity="0.08" />
-              </radialGradient>
-              <linearGradient
-                id="paint3_linear_25:217"
-                x1="226.775"
-                y1="-66.1548"
-                x2="292.157"
-                y2="351.421"
-                gradientUnits="userSpaceOnUse"
-              >
-                <stop stopColor="#4A6CF7" />
-                <stop offset="1" stopColor="#4A6CF7" stopOpacity="0" />
-              </linearGradient>
-              <linearGradient
-                id="paint4_linear_25:217"
-                x1="184.521"
-                y1="182.159"
-                x2="184.521"
-                y2="448.882"
-                gradientUnits="userSpaceOnUse"
-              >
-                <stop stopColor="#4A6CF7" />
-                <stop offset="1" stopColor="white" stopOpacity="0" />
-              </linearGradient>
-              <linearGradient
-                id="paint5_linear_25:217"
-                x1="356"
-                y1="110"
-                x2="356"
-                y2="470"
-                gradientUnits="userSpaceOnUse"
-              >
-                <stop stopColor="#4A6CF7" />
-                <stop offset="1" stopColor="white" stopOpacity="0" />
-              </linearGradient>
-              <linearGradient
-                id="paint6_linear_25:217"
-                x1="118.524"
-                y1="29.2497"
-                x2="166.965"
-                y2="338.63"
-                gradientUnits="userSpaceOnUse"
-              >
-                <stop stopColor="#4A6CF7" />
-                <stop offset="1" stopColor="#4A6CF7" stopOpacity="0" />
-              </linearGradient>
-            </defs>
-          </svg>
-        </div>
-        {/* <Image
-          src="/images/hero/Path_30.png"
-          alt="laptop-image"
-          width="1100"
-          height="1100"
-          className=" mx-auto lg:mr-0"
-          style={{
-            zIndex: "-10",
-            overflow: "hidden",
-            position: "absolute",
-            top: "0"
-          }}
-        /> */}
         <div className="container">
           <div className="-mx-4 flex flex-wrap justify-center">
             <div className="-mx-4 flex w-[100%] flex-wrap items-center">
@@ -125,11 +39,11 @@ const Hero = () => {
                 className="wow fadeInUp -mx-4 mx-auto w-full w-[90%] max-w-[700px] text-start lg:w-1/2 "
                 data-wow-delay=".2s"
               >
-                <h1 className="mb-5 text-3xl font-bold leading-tight text-black dark:text-white sm:text-4xl sm:leading-tight md:text-5xl md:leading-tight">
+                <h1 className="mb-5 text-3xl font-bold leading-tight text-white sm:text-4xl sm:leading-tight md:text-5xl md:leading-tight">
                   EVERYTHING TO
                   <br /> SELL ANYTHING
                 </h1>
-                <p className="mb-12 text-base font-medium !leading-relaxed text-body-color dark:text-white dark:opacity-90 sm:text-lg md:text-xl">
+                <p className="mb-12 text-base font-medium !leading-relaxed text-body-color  dark:opacity-90 sm:text-lg md:text-xl">
                   Startup is free Next.js template for startups and SaaS
                   business websites comes with all the essential pages,
                   components, and sections you need to launch a complete
@@ -145,158 +59,25 @@ const Hero = () => {
               {/* IMAGE SECTION */}
               <div className="w-full px-4 lg:w-1/2">
                 <div
-                  className="wow fadeInUp w-900 relative mx-auto aspect-[27/24] lg:mr-0"
+                  className="wow fadeInUp w-900 relative relative mx-auto aspect-[27/24] lg:mr-0"
                   data-wow-delay=".2s"
                 >
-                  <Image
+                  <img
                     src="/images/hero/NoPath.png"
                     alt="laptop-image"
-                    fill
-                    className="min-w-140 mx-auto lg:mr-0"
+                    className=" absolute  w-[100%] lg:w-[100%]"
+                  />
+                  <img
+                    src="/images/hero/NoPath.png"
+                    alt="laptop-image"
+                    className=" absolute left-[2rem] top-[0rem] z-[1] w-[100%] md:left-[2rem] md:top-[0rem] lg:left-[3rem]  lg:top-[0rem] lg:w-[100%]"
                   />
                 </div>
               </div>
             </div>
           </div>
         </div>
-        <div className="absolute top-0 right-0 z-[-1] opacity-30 lg:opacity-100">
-          <svg
-            width="450"
-            height="556"
-            viewBox="0 0 450 556"
-            fill="none"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <circle
-              cx="277"
-              cy="63"
-              r="225"
-              fill="url(#paint0_linear_25:217)"
-            />
-            <circle
-              cx="17.9997"
-              cy="182"
-              r="18"
-              fill="url(#paint1_radial_25:217)"
-            />
-            <circle
-              cx="76.9997"
-              cy="288"
-              r="34"
-              fill="url(#paint2_radial_25:217)"
-            />
-            <circle
-              cx="325.486"
-              cy="302.87"
-              r="180"
-              transform="rotate(-37.6852 325.486 302.87)"
-              fill="url(#paint3_linear_25:217)"
-            />
-            <circle
-              opacity="0.8"
-              cx="184.521"
-              cy="315.521"
-              r="132.862"
-              transform="rotate(114.874 184.521 315.521)"
-              stroke="url(#paint4_linear_25:217)"
-            />
-            <circle
-              opacity="0.8"
-              cx="356"
-              cy="290"
-              r="179.5"
-              transform="rotate(-30 356 290)"
-              stroke="url(#paint5_linear_25:217)"
-            />
-            <circle
-              opacity="0.8"
-              cx="191.659"
-              cy="302.659"
-              r="133.362"
-              transform="rotate(133.319 191.659 302.659)"
-              fill="url(#paint6_linear_25:217)"
-            />
-            <defs>
-              <linearGradient
-                id="paint0_linear_25:217"
-                x1="-54.5003"
-                y1="-178"
-                x2="222"
-                y2="288"
-                gradientUnits="userSpaceOnUse"
-              >
-                <stop stopColor="#4A6CF7" />
-                <stop offset="1" stopColor="#4A6CF7" stopOpacity="0" />
-              </linearGradient>
-              <radialGradient
-                id="paint1_radial_25:217"
-                cx="0"
-                cy="0"
-                r="1"
-                gradientUnits="userSpaceOnUse"
-                gradientTransform="translate(17.9997 182) rotate(90) scale(18)"
-              >
-                <stop offset="0.145833" stopColor="#4A6CF7" stopOpacity="0" />
-                <stop offset="1" stopColor="#4A6CF7" stopOpacity="0.08" />
-              </radialGradient>
-              <radialGradient
-                id="paint2_radial_25:217"
-                cx="0"
-                cy="0"
-                r="1"
-                gradientUnits="userSpaceOnUse"
-                gradientTransform="translate(76.9997 288) rotate(90) scale(34)"
-              >
-                <stop offset="0.145833" stopColor="#4A6CF7" stopOpacity="0" />
-                <stop offset="1" stopColor="#4A6CF7" stopOpacity="0.08" />
-              </radialGradient>
-              <linearGradient
-                id="paint3_linear_25:217"
-                x1="226.775"
-                y1="-66.1548"
-                x2="292.157"
-                y2="351.421"
-                gradientUnits="userSpaceOnUse"
-              >
-                <stop stopColor="#4A6CF7" />
-                <stop offset="1" stopColor="#4A6CF7" stopOpacity="0" />
-              </linearGradient>
-              <linearGradient
-                id="paint4_linear_25:217"
-                x1="184.521"
-                y1="182.159"
-                x2="184.521"
-                y2="448.882"
-                gradientUnits="userSpaceOnUse"
-              >
-                <stop stopColor="#4A6CF7" />
-                <stop offset="1" stopColor="white" stopOpacity="0" />
-              </linearGradient>
-              <linearGradient
-                id="paint5_linear_25:217"
-                x1="356"
-                y1="110"
-                x2="356"
-                y2="470"
-                gradientUnits="userSpaceOnUse"
-              >
-                <stop stopColor="#4A6CF7" />
-                <stop offset="1" stopColor="white" stopOpacity="0" />
-              </linearGradient>
-              <linearGradient
-                id="paint6_linear_25:217"
-                x1="118.524"
-                y1="29.2497"
-                x2="166.965"
-                y2="338.63"
-                gradientUnits="userSpaceOnUse"
-              >
-                <stop stopColor="#4A6CF7" />
-                <stop offset="1" stopColor="#4A6CF7" stopOpacity="0" />
-              </linearGradient>
-            </defs>
-          </svg>
-        </div>
+
         <div className="absolute bottom-0 left-0 z-[-1] opacity-30 lg:opacity-100">
           <svg
             width="364"

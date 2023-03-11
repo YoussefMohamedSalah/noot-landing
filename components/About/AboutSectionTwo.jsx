@@ -5,7 +5,12 @@ import { FaLongArrowAltRight } from "react-icons/fa";
 
 const AboutSectionTwo = () => {
   return (
-    <section className="">
+    <section style={{ position: "relative" }}>
+      <img
+        src="/images/hero/Rectangle_11.png"
+        alt="clip image"
+        className="absolute left-[-15rem] top-[-4rem] z-[-10] w-[100%] lg:left-[-30rem] lg:top-[-12rem] lg:w-[60%]"
+      />
       <div className="w-[99%]">
         <div className="flex flex-wrap items-center">
           <div className="w-full px-4 lg:w-1/2">
@@ -30,7 +35,7 @@ const AboutSectionTwo = () => {
                     height: "0.4rem",
                     borderRadius: "10px",
                     marginBottom: "1.2rem",
-                    marginTop: "1.2rem",
+                    marginTop: "1.2rem"
                   }}
                 />
 

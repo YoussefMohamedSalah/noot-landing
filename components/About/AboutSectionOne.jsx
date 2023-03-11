@@ -1,3 +1,4 @@
+/* eslint-disable @next/next/no-img-element */
 import Image from "next/image";
 import { FaLongArrowAltRight } from "react-icons/fa";
 
@@ -18,7 +19,15 @@ const AboutSectionOne = () => {
   );
 
   return (
-    <section id="about" className="pt-16 md:pt-20 lg:pt-28">
+    <section
+      id="about"
+      className=" relative overflow-hidden pt-16 md:pt-20 lg:pt-28"
+    >
+      <img
+        src="/images/hero/Rectangle_11.png"
+        alt="clip image"
+        className="absolute left-[12rem] top-[20rem] z-[-10] w-[100%] lg:left-[85rem] lg:top-[-2rem] lg:w-[55%]"
+      />
       <div className="container">
         <div>
           <div className="-mx-4 flex flex-wrap items-center ">
@@ -86,6 +95,7 @@ const AboutSectionOne = () => {
                   fill
                   className="mx-auto max-h-[571px] max-w-full lg:mr-0"
                 />
+              
               </div>
             </div>
           </div>
