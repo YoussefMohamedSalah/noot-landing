@@ -38,13 +38,13 @@ const Testimonials = () => {
         <div className="container">
           <div className="">
             <div className="-mx-4 flex flex-wrap items-center ">
-              <div className="w-full px-4 lg:w-1/3">
+              <div className="w-full px-4 lg:w-1/2">
                 {/* section */}
                 <>
                   <div
                     className={`wow fadeInUp mx-auto w-full text-start `}
                     data-wow-delay=".1s"
-                    style={{ marginBottom: "10px" }}
+                    style={{ marginBottom: "10px", paddingRight: "5rem" }}
                   >
                     <h2
                       className="mb-4 text-3xl font-bold !leading-tight  sm:text-4xl md:text-[40px]"
@@ -56,10 +56,12 @@ const Testimonials = () => {
                       className="text-body-primary text-base !leading-relaxed md:text-lg"
                       style={{ color: "#3B3A3A" }}
                     >
-                      The main ‘thrust’ is to focus on educating attendees on
-                      how to best protect highly vulnerable business
-                      applications with interactive panel discussions and
-                      roundtables.
+                      Lorem ipsum dolor sit amet, consetetur sadipscing elitr,
+                      sed diam nonumy eirmod tempor invidunt ut labore et dolore
+                      magna aliquyam erat, sed diam voluptua. At vero eos et
+                      accusam et justo duo dolores et ea rebum. Stet clita kasd
+                      gubergren, no sea takimata sanctus est Lorem ipsum dolor
+                      sit amet
                     </p>
                   </div>
                   <div
@@ -93,7 +95,7 @@ const Testimonials = () => {
                 {/* section */}
               </div>
 
-              <div className="w-[100%] w-full px-4 lg:w-2/3">
+              <div className="w-full px-4 lg:w-1/2">
                 <div
                   className="wow fadeInUp relative mx-auto flex aspect-[25/24]  max-w-[856px] lg:mr-0"
                   data-wow-delay=".2s"
@@ -106,7 +108,7 @@ const Testimonials = () => {
                       justifyContent: "center",
                       alignItems: "center",
                       width: "10rem",
-                      height: "100%"
+                      height: "50vh"
                     }}
                   >
                     <div
@@ -183,21 +185,50 @@ const Testimonials = () => {
                     style={{
                       display: "flex",
                       flexDirection: "column",
+                      justifyContent: "space-between",
+                      alignItems: "start",
                       width: "100%",
-                      height: "100%"
+                      height: "50vh",
+                      paddingTop: "3rem"
                     }}
                   >
-                    <p>Market Research</p>
-                    <p>
-                      Lorem ipsum dolor sit amet, consetetur sadipscing elitr,
-                      sed diam nonumy eirmod tempor invidunt ut labore et dolore
-                      magna aliquyam erat, sed diam voluptua.
-                    </p>
+                    <div>
+                      <p style={{ color: "#3B3A3A" }}>Market Research</p>
+                      <p style={{ color: "#8F8F8F" }}>
+                        Lorem ipsum dolor sit amet, consetetur sadipscing elitr,
+                        sed diam nonumy eirmod tempor invidunt ut labore et
+                        dolore magna aliquyam erat, sed diam voluptua.
+                      </p>
+                    </div>
+                    {/* --- */}
+                    <div>
+                      <p style={{ color: "#3B3A3A" }}>Market Research</p>
+                      <p style={{ color: "#8F8F8F" }}>
+                        Lorem ipsum dolor sit amet, consetetur sadipscing elitr,
+                        sed diam nonumy eirmod tempor invidunt ut labore et
+                        dolore magna aliquyam erat, sed diam voluptua.
+                      </p>
+                    </div>
+                    {/* ---- */}
+                    <div>
+                      <p style={{ color: "#3B3A3A" }}>Market Research</p>
+                      <p style={{ color: "#8F8F8F" }}>
+                        Lorem ipsum dolor sit amet, consetetur sadipscing elitr,
+                        sed diam nonumy eirmod tempor invidunt ut labore et
+                        dolore magna aliquyam erat, sed diam voluptua.
+                      </p>
+                    </div>
+                    {/* ---- */}
                   </div>
                   {/* -------------- */}
                 </div>
               </div>
             </div>
+            {/* <div style={{alignSelf:'center'}}>
+                    <h3 style>
+
+                    </h3>
+            </div> */}
           </div>
         </div>
       </div>
