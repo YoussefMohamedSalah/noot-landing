@@ -163,7 +163,7 @@ const Pricing = () => {
                     />
                     <div>
                       <p
-                        className="pb-[1rem] text-lg font-bold sm:text-sm"
+                        className="pb-[0.5rem] text-lg font-bold sm:text-sm"
                         style={{
                           color: "#3B3A3A"
                         }}
@@ -178,11 +178,10 @@ const Pricing = () => {
                       >
                         CEO of Company
                       </p>
-                      <p style={{ color: "#8F8F8F" }}>
+                      <p style={{ color: "#8F8F8F", lineHeight: "1.4" }}>
                         Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                        Pariatur aperiam
                       </p>
-                      <div style={{ display: "flex", paddingTop: "1rem" }}>
+                      <div style={{ display: "flex", paddingTop: "0.5rem" }}>
                         <img
                           src="/images/hero/Imetro-star.png"
                           alt="shape"
