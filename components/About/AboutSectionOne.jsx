@@ -1,5 +1,6 @@
 import Image from "next/image";
 import SectionTitle from "../Common/SectionTitle";
+import { FaLongArrowAltRight } from "react-icons/fa";
 
 const checkIcon = (
   <svg width="16" height="13" viewBox="0 0 16 13" className="fill-current">
@@ -21,44 +22,57 @@ const AboutSectionOne = () => {
     <section id="about" className="pt-16 md:pt-20 lg:pt-28">
       <div className="container">
         <div className="border-b border-body-color/[.15] pb-16 dark:border-white/[.15] md:pb-20 lg:pb-28">
-          <div className="-mx-4 flex flex-wrap items-center">
-            <div className="w-full px-4 lg:w-1/2">
-              <SectionTitle
-                title="Crafted for Startup, SaaS and Business Sites."
-                paragraph="The main ‘thrust’ is to focus on educating attendees on how to best protect highly vulnerable business applications with interactive panel discussions and roundtables."
-                mb="44px"
-              />
-
-              <div
-                className="wow fadeInUp mb-12 max-w-[570px] lg:mb-0"
-                data-wow-delay=".15s"
-              >
-                <div className="mx-[-12px] flex flex-wrap">
-                  <div className="w-full px-3 sm:w-1/2 lg:w-full xl:w-1/2">
-                    <List text="Premium quality" />
-                    <List text="Tailwind CSS" />
-                    <List text="Use for lifetime" />
-                  </div>
-
-                  <div className="w-full px-3 sm:w-1/2 lg:w-full xl:w-1/2">
-                    <List text="Next.js" />
-                    <List text="Rich documentation" />
-                    <List text="Developer friendly" />
-                  </div>
+          <div className="-mx-4 flex flex-wrap items-center ">
+            <div className="w-full px-4 lg:w-1/3">
+              {/* section */}
+              <>
+                <div
+                  className={`wow fadeInUp mx-auto w-full text-start `}
+                  data-wow-delay=".1s"
+                  style={{ marginBottom: "10px" }}
+                >
+                  <h2
+                    className="mb-4 text-3xl font-bold !leading-tight  sm:text-4xl md:text-[40px]"
+                    style={{ color: "#6DC45E" }}
+                  >
+                    Best platform for the Technologies Era
+                  </h2>
+                  <p className="text-body-primary text-base !leading-relaxed md:text-lg">
+                    The main ‘thrust’ is to focus on educating attendees on how
+                    to best protect highly vulnerable business applications with
+                    interactive panel discussions and roundtables.
+                  </p>
                 </div>
-              </div>
+                <div
+                  className="text-1xl sm:text-1xl mx-[-12px] mb-4
+                flex flex-wrap p-2  md:text-[20px]
+                "
+                >
+                  <a
+                    href="#0"
+                    style={{ color: "#06B7B7" }}
+                    className="flex  text-sm text-body-color transition hover:bg-opacity-100 hover:text-white"
+                  >
+                    Learn about our success! &nbsp; &nbsp; &nbsp;{" "}
+                    <FaLongArrowAltRight
+                      style={{ alignSelf: "center", width: "2rem" }}
+                    />
+                  </a>
+                </div>
+              </>
+              {/* section */}
             </div>
 
-            <div className="w-full px-4 lg:w-1/2">
+            <div className="w-[100%] w-full px-4 lg:w-2/3">
               <div
-                className="wow fadeInUp relative mx-auto aspect-[25/24] max-w-[500px] lg:mr-0"
+                className="wow fadeInUp relative mx-auto aspect-[25/24]  max-w-[856px] lg:mr-0"
                 data-wow-delay=".2s"
               >
                 <Image
-                  src="/images/about/about-image.svg"
+                  src="/images/hero/NoPath_3.png"
                   alt="about-image"
                   fill
-                  className="mx-auto max-w-full lg:mr-0"
+                  className="mx-auto max-h-[571px] max-w-full lg:mr-0"
                 />
               </div>
             </div>

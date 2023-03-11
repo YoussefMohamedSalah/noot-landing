@@ -1,50 +1,65 @@
+/* eslint-disable @next/next/no-img-element */
 import Image from "next/image";
+import SectionTitle from "../Common/SectionTitle";
+import { FaLongArrowAltRight } from "react-icons/fa";
 
 const AboutSectionTwo = () => {
   return (
-    <section className="py-16 md:py-20 lg:py-28">
-      <div className="container">
+    <section className="">
+      <div className="w-[99%]">
         <div className="-mx-4 flex flex-wrap items-center">
           <div className="w-full px-4 lg:w-1/2">
             <div
-              className="wow fadeInUp relative mx-auto mb-12 aspect-[25/24] max-w-[500px] text-center lg:m-0"
+              className="wow fadeInUp relative mx-auto mb-12 aspect-[25/24] max-w-[900px] text-center lg:m-0"
               data-wow-delay=".15s"
             >
-              <Image
-                src="/images/about/about-image-2.svg"
+              <img
+                src="/images/hero/NoPath_2.png"
                 alt="about image"
-                fill
+                style={{ width: "100%" }}
               />
             </div>
           </div>
           <div className="w-full px-4 lg:w-1/2">
             <div className="wow fadeInUp max-w-[470px]" data-wow-delay=".2s">
-              <div className="mb-9">
-                <h3 className="mb-4 text-xl font-bold text-black dark:text-white sm:text-2xl lg:text-xl xl:text-2xl">
-                  Bug free code
-                </h3>
-                <p className="text-base font-medium leading-relaxed text-body-color sm:text-lg sm:leading-relaxed">
+              <div className="mb-9 w-[100%]">
+                <div
+                  style={{
+                    width: "4rem",
+                    backgroundColor: "#06B7B7",
+                    height: "0.4rem",
+                    borderRadius: "10px",
+                    marginBottom: "1.2rem",
+                    marginTop: "1.2rem"
+                  }}
+                />
+
+                <SectionTitle
+                  title="Create A Website"
+                  paragraph="The main ‘thrust’ is to focus on educating attendees on how to best protect highly vulnerable business applications with interactive panel discussions and roundtables."
+                  mb="0px"
+                />
+                <p className="text-body-primary text-base font-medium leading-relaxed sm:text-lg sm:leading-relaxed">
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
                   do eiusmod tempor incididunt ut labore et dolore magna aliqua.
                 </p>
-              </div>
-              <div className="mb-9">
-                <h3 className="mb-4 text-xl font-bold text-black dark:text-white sm:text-2xl lg:text-xl xl:text-2xl">
-                  Premier support
-                </h3>
-                <p className="text-base font-medium leading-relaxed text-body-color sm:text-lg sm:leading-relaxed">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                  do eiusmod tempor incididunt.
-                </p>
-              </div>
-              <div className="mb-1">
-                <h3 className="mb-4 text-xl font-bold text-black dark:text-white sm:text-2xl lg:text-xl xl:text-2xl">
-                  Next.js
-                </h3>
-                <p className="text-base font-medium leading-relaxed text-body-color sm:text-lg sm:leading-relaxed">
-                  Lorem ipsum dolor sit amet, sed do eiusmod tempor incididunt
-                  consectetur adipiscing elit setim.
-                </p>
+
+                <div
+                  className="text-1xl sm:text-1xl mx-[-12px] mb-4
+                flex flex-wrap p-2  md:text-[20px]
+                "
+                >
+                  <a
+                    href="#0"
+                    style={{ color: "#06B7B7" }}
+                    className="flex  text-sm text-body-color transition hover:bg-opacity-100 hover:text-white"
+                  >
+                    Learn about our success! &nbsp; &nbsp; &nbsp;{" "}
+                    <FaLongArrowAltRight
+                      style={{ alignSelf: "center", width: "2rem" }}
+                    />
+                  </a>
+                </div>
               </div>
             </div>
           </div>

@@ -2,7 +2,7 @@ import SectionTitle from "../Common/SectionTitle";
 import SingleFeature from "./SingleFeature";
 import featuresData from "./featuresData";
 import Image from "next/image";
-// import ArrowRightAltIcon from "@mui/icons-material/ArrowRightAlt";
+import { FaLongArrowAltRight } from "react-icons/fa";
 
 const checkIcon = (
   <svg width="16" height="13" viewBox="0 0 16 13" className="fill-current">
@@ -52,10 +52,10 @@ const Features = () => {
                     style={{ color: "#06B7B7" }}
                     className="flex  text-sm text-body-color transition hover:bg-opacity-100 hover:text-white"
                   >
-                    <p>
-                      Learn about our success! 
-                      {/* <ArrowRightAltIcon /> */}
-                    </p>
+                    Learn about our success! &nbsp; &nbsp; &nbsp;{" "}
+                    <FaLongArrowAltRight
+                      style={{ alignSelf: "center", width: "2rem" }}
+                    />
                   </a>
                 </div>
               </div>
@@ -66,20 +66,89 @@ const Features = () => {
                 className="wow fadeInUp relative mx-auto aspect-[25/24] max-w-[700px] lg:mr-0"
                 data-wow-delay=".2s"
               >
-                <div className="grid grid-cols-1 gap-x-8 gap-y-14 md:grid-cols-2 lg:grid-cols-3">
+                {/* first */}
+                <div className="grid grid-cols-1 gap-x-8 gap-y-14 md:grid-cols-2 lg:grid-cols-2">
                   {featuresData.map((feature) => (
                     <SingleFeature key={feature.id} feature={feature} />
                   ))}
                 </div>
+                {/* second */}
+                <div className="grid grid-cols-1 gap-x-8 gap-y-14 md:grid-cols-2 lg:grid-cols-2">
+                  {/* third */}
+                  <div className="w-full pt-16">
+                    <div className="wow fadeInUp" data-wow-delay=".15s">
+                      <div
+                        style={{ backgroundColor: "#65C063" }}
+                        className=" m-2 mb-2 flex flex flex h-16 w-16
+        w-16 items-center justify-center rounded-full rounded-full text-primary
+        "
+                      >
+                        <p
+                          style={{
+                            color: "white",
+                            fontWeight: "bolder",
+                            fontSize: "2.5rem"
+                          }}
+                        >
+                          3
+                        </p>
+                      </div>
+                      <div style={{ width: "max-content" }}>
+                        <p
+                          className="text-base !leading-relaxed  md:text-lg"
+                          style={{ color: "#3B3A3A" }}
+                        >
+                          Market your business
+                        </p>
+                        <div
+                          style={{
+                            width: "100%",
+                            backgroundColor: "#06B7B7",
+                            height: "0.4rem",
+                            borderRadius: "10px",
+                            marginBottom: "1.2rem",
+                            marginTop: "1.2rem"
+                          }}
+                        />
+                      </div>
+
+                      <h3 className="mb-5 text-xl font-bold text-black dark:text-white sm:text-2xl lg:text-xl xl:text-2xl">
+                        Fully Customizable
+                      </h3>
+                      <p className="pr-[10px] text-base font-medium leading-relaxed text-body-color">
+                        Tuae nam ex similique incidunt expedita exerci tationem
+                        laudantium. Repellendus quisquam numquam perferendis
+                        earum sapiente non tempore? Fugit repellat ut maiores.
+                      </p>
+                    </div>
+                  </div>
+
+                  {/* fourth */}
+                  <div className="w-full">
+                    <div
+                      className="wow fadeInUp flex h-[100%]"
+                      data-wow-delay=".15s"
+                    >
+                      <h3
+                        style={{ alignSelf: "flex-end" }}
+                        className="align-self-end mb-5 text-xl font-bold text-black dark:text-white sm:text-2xl lg:text-xl xl:text-2xl"
+                      >
+                        <a href="#0" style={{ color: "#06B7B7" }}>
+                          <div className="flex">
+                            GET STARTED &nbsp; &nbsp; &nbsp;{" "}
+                            <FaLongArrowAltRight
+                              style={{ alignSelf: "center", width: "2rem" }}
+                            />
+                          </div>
+                        </a>
+                      </h3>
+                    </div>
+                  </div>
+                  {/* --------- */}
+                </div>
               </div>
             </div>
           </div>
-
-          {/* <div className="grid grid-cols-1 gap-x-8 gap-y-14 md:grid-cols-2 lg:grid-cols-3">
-            {featuresData.map((feature) => (
-              <SingleFeature key={feature.id} feature={feature} />
-            ))}
-          </div> */}
         </div>
       </section>
     </>

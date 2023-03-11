@@ -10,8 +10,19 @@ const Video = () => {
   const [isOpen, setOpen] = useState(false);
 
   return (
-    <section className="relative z-10 py-16 md:py-20 lg:py-28">
+    <section className="relative z-10 ">
       <div className="container">
+        <div
+          style={{
+            display: "flex",
+            alignItems: "center",
+            justifyContent: "center",
+            width: "100%",
+            paddingBottom: "1rem"
+          }}
+        >
+          <p>Try Noot, No credit card required.</p>
+        </div>
         <SectionTitle
           title="Create a website without limits"
           paragraph="Build and scale with confidence. From powerful site infrastructure to advances business solutions-we've got you covered."

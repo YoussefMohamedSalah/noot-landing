@@ -6,7 +6,7 @@ const Hero = () => {
     <>
       <section
         id="home"
-        className="relative z-10 overflow-hidden pt-[120px] pb-16 md:pt-[150px] md:pb-[120px] xl:pt-[180px] xl:pb-[160px] 2xl:pt-[210px] 2xl:pb-[200px]"
+        className="relative z-10 overflow-hidden pt-[120px] xl:pt-[180px] 2xl:pt-[210px] "
       >
         <div className="absolute top-0 left-0 z-[-1] opacity-30 lg:opacity-100">
           <svg
