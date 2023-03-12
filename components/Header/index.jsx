@@ -16,11 +16,15 @@ const Header = () => {
 
   // Sticky Navbar
   const [sticky, setSticky] = useState(false);
+  const [hide, setHide] = useState(false);
+
   const handleStickyNavbar = () => {
     if (window.scrollY >= 80) {
       setSticky(true);
+      setHide(true);
     } else {
       setSticky(false);
+      setHide(false);
     }
   };
   useEffect(() => {
@@ -40,17 +44,21 @@ const Header = () => {
   return (
     <>
       <header
-        className={`header top-0 left-0 z-40 flex h-[6rem] w-full items-center bg-white  dark:!bg-black  ${
+        className={`header top-0 left-0 z-40 flex h-[5rem] w-full items-center bg-white dark:!bg-black  lg:h-[6rem]  ${
           sticky
-            ? "!fixed !z-[9999] !bg-white !bg-opacity-80 shadow-sticky backdrop-blur-sm !transition dark:!bg-opacity-20"
+            ? // ? "!fixed !z-[9999] !bg-white !bg-opacity-80 shadow-sticky backdrop-blur-sm !transition dark:!bg-opacity-20"
+              "absolute "
             : "absolute"
         }`}
       >
         <img
           src="/images/hero/Group_19898.png"
           alt="clip image"
-          className="z-[-9] w-[45%] lg:w-[25%]"
-          style={{ position: "absolute", left: "25%" }}
+          // className={`"z-[-9] lg:w-[25%]" w-[45%] ${
+          //   hide ? "contents" : "absolute"
+          // }`}
+          className="absolute z-[-9] w-[45%] lg:w-[25%]"
+          style={{ left: "25%" }}
         />
         <Stack
           flexDirection="column"

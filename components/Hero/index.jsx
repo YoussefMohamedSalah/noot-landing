@@ -10,7 +10,7 @@ const Hero = () => {
         src="/images/hero/Path_30.png"
         alt="clip image"
         className="z-[-10] w-[100%] lg:w-[60%]"
-        style={{ position: "absolute", top: "6rem" }}
+        style={{ position: "absolute", top: "5rem" }}
       />
 
       <img
