@@ -15,7 +15,7 @@ const Pricing = () => {
       <div className="container">
         <div style={{ display: "flex", flexDirection: "column" }}>
           <div
-            className="flex w-full"
+            className="flex w-full "
             style={{ justifyContent: "space-evenly" }}
           >
             <div
@@ -23,7 +23,7 @@ const Pricing = () => {
                 display: "flex",
                 flexDirection: "column",
                 gap: "1",
-                alignItems: "center"
+                alignItems: "center",
               }}
             >
               <h3
@@ -31,7 +31,7 @@ const Pricing = () => {
                   color: "#FF6057",
                   fontSize: "46px",
                   fontWeight: "700",
-                  lineHeight: "72px"
+                  lineHeight: "72px",
                 }}
               >
                 570
@@ -40,7 +40,7 @@ const Pricing = () => {
                 style={{
                   color: "#3B3A3A",
                   fontSize: "20px",
-                  fontWeight: "400"
+                  fontWeight: "400",
                 }}
               >
                 downloads
@@ -51,7 +51,7 @@ const Pricing = () => {
                 display: "flex",
                 flexDirection: "column",
                 gap: "1",
-                alignItems: "center"
+                alignItems: "center",
               }}
             >
               <h3
@@ -59,7 +59,7 @@ const Pricing = () => {
                   color: "#FF6057",
                   fontSize: "46px",
                   fontWeight: "700",
-                  lineHeight: "72px"
+                  lineHeight: "72px",
                 }}
               >
                 570
@@ -68,7 +68,7 @@ const Pricing = () => {
                 style={{
                   color: "#3B3A3A",
                   fontSize: "20px",
-                  fontWeight: "400"
+                  fontWeight: "400",
                 }}
               >
                 Active User
@@ -79,7 +79,7 @@ const Pricing = () => {
                 display: "flex",
                 flexDirection: "column",
                 gap: "1",
-                alignItems: "center"
+                alignItems: "center",
               }}
             >
               <h3
@@ -87,7 +87,7 @@ const Pricing = () => {
                   color: "#FF6057",
                   fontSize: "46px",
                   fontWeight: "700",
-                  lineHeight: "72px"
+                  lineHeight: "72px",
                 }}
               >
                 570
@@ -96,7 +96,7 @@ const Pricing = () => {
                 style={{
                   color: "#3B3A3A",
                   fontSize: "20px",
-                  fontWeight: "400"
+                  fontWeight: "400",
                 }}
               >
                 Positive Feedback
@@ -107,7 +107,7 @@ const Pricing = () => {
                 display: "flex",
                 flexDirection: "column",
                 gap: "1",
-                alignItems: "center"
+                alignItems: "center",
               }}
             >
               <h3
@@ -115,7 +115,7 @@ const Pricing = () => {
                   color: "#FF6057",
                   fontSize: "46px",
                   fontWeight: "700",
-                  lineHeight: "72px"
+                  lineHeight: "72px",
                 }}
               >
                 570
@@ -124,23 +124,14 @@ const Pricing = () => {
                 style={{
                   color: "#3B3A3A",
                   fontSize: "20px",
-                  fontWeight: "400"
+                  fontWeight: "400",
                 }}
               >
                 + rating
               </p>
             </div>
           </div>
-          <div
-            style={{
-              display: "flex",
-              flexDirection: "row",
-              justifyContent: "center",
-              alignItems: "center",
-              width: "100%",
-              height: "100%"
-            }}
-          >
+          <div className="flex h-full w-full flex-col items-center justify-center lg:flex-row ">
             <div className="w-[100%] w-full px-4 lg:w-1/2">
               <div
                 className="wow fadeInUp w-900 relative mx-auto flex aspect-[27/24] lg:mr-0"
@@ -151,7 +142,7 @@ const Pricing = () => {
                     width: "95%",
                     height: "65%",
                     backgroundColor: "white",
-                    alignSelf: "center"
+                    alignSelf: "center",
                   }}
                 >
                   <div
@@ -162,7 +153,7 @@ const Pricing = () => {
                       height: "100%",
                       justifyContent: "center",
                       alignItems: "center",
-                      padding: "3rem"
+                      padding: "3rem",
                     }}
                   >
                     <img
@@ -171,7 +162,7 @@ const Pricing = () => {
                       style={{
                         width: "157px",
                         height: "203px",
-                        marginRight: "1.5rem"
+                        marginRight: "1.5rem",
                       }}
                     />
                     <div>
@@ -179,7 +170,7 @@ const Pricing = () => {
                         style={{
                           paddingBottom: "1rem",
                           color: "#3B3A3A",
-                          fontSize: "24px"
+                          fontSize: "24px",
                         }}
                       >
                         Florrie Jacobs
@@ -188,7 +179,7 @@ const Pricing = () => {
                         style={{
                           paddingBottom: "1rem",
                           color: "#8F8F8F",
-                          fontSize: "16px"
+                          fontSize: "16px",
                         }}
                       >
                         CEO of Company
@@ -205,7 +196,7 @@ const Pricing = () => {
                           style={{
                             width: "1rem",
                             height: "1rem",
-                            marginRight: "0.5rem"
+                            marginRight: "0.5rem",
                           }}
                         />
                         <img
@@ -214,34 +205,34 @@ const Pricing = () => {
                           style={{
                             width: "1rem",
                             height: "1rem",
-                            marginRight: "0.5rem"
+                            marginRight: "0.5rem",
                           }}
-                        />{" "}
+                        />
                         <img
                           src="/images/hero/Imetro-star.png"
                           alt="shape"
                           style={{
                             width: "1rem",
                             height: "1rem",
-                            marginRight: "0.5rem"
+                            marginRight: "0.5rem",
                           }}
-                        />{" "}
+                        />
                         <img
                           src="/images/hero/Imetro-star.png"
                           alt="shape"
                           style={{
                             width: "1rem",
                             height: "1rem",
-                            marginRight: "0.5rem"
+                            marginRight: "0.5rem",
                           }}
-                        />{" "}
+                        />
                         <img
                           src="/images/hero/Imetro-star.png"
                           alt="shape"
                           style={{
                             width: "1rem",
                             height: "1rem",
-                            marginRight: "0.5rem"
+                            marginRight: "0.5rem",
                           }}
                         />
                       </div>
@@ -295,7 +286,7 @@ const Pricing = () => {
                         height: "45px",
                         color: "white",
                         fontSize: "16px",
-                        fontWeight: "400"
+                        fontWeight: "400",
                       }}
                     >
                       About us
