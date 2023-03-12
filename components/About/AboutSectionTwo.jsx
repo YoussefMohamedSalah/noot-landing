@@ -7,7 +7,7 @@ const AboutSectionTwo = () => {
   return (
     <section className="">
       <div className="w-[99%]">
-        <div className="-mx-4 flex flex-wrap items-center">
+        <div className="flex flex-wrap items-center">
           <div className="w-full px-4 lg:w-1/2">
             <div
               className="wow fadeInUp relative mx-auto  aspect-[25/24] max-w-[900px] text-center lg:m-0"
@@ -30,7 +30,7 @@ const AboutSectionTwo = () => {
                     height: "0.4rem",
                     borderRadius: "10px",
                     marginBottom: "1.2rem",
-                    marginTop: "1.2rem"
+                    marginTop: "1.2rem",
                   }}
                 />
 
